@@ -49,14 +49,10 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
             NoteModel current = noteModelList.get(position);
             holder.noteItemView.setText(current.getNoteTitle());
             holder.noteItemViewDesc.setText(current.getNoteDescription());
-            holder.cardView.setOnLongClickListener(new View.OnLongClickListener() {
-                @Override
-                public boolean onLongClick(View view) {
-                    buildAlertDialogDeleteAll(position);
-                    return false;
-                }
+            holder.cardView.setOnLongClickListener(view -> {
+                buildAlertDialogDeleteAll(position);
+                return false;
             });
-
         } else {
             holder.noteItemView.setText("No note");
         }
@@ -96,15 +92,9 @@ public class NoteListAdapter extends RecyclerView.Adapter<NoteListAdapter.NoteVi
         }
         builder.setTitle("Delete entry")
                 .setMessage("Are you sure you want to this entry?")
-                .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        viewModel.delete(noteModelList.get(position).getId());
-                    }
-                })
-                .setNegativeButton(android.R.string.no, new DialogInterface.OnClickListener() {
-                    public void onClick(DialogInterface dialog, int which) {
-                        // do nothing
-                    }
+                .setPositiveButton(android.R.string.yes, (dialog, which) -> viewModel.delete(noteModelList.get(position).getId()))
+                .setNegativeButton(android.R.string.no, (dialog, which) -> {
+                    // do nothing
                 })
                 .setIcon(android.R.drawable.ic_dialog_alert)
                 .show();
