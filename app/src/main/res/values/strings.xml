@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">RoomLivedata</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Vivamus non quam enim. Nunc varius suscipit purus ut pellentesque. Fusce vitae pretium turpis.
+        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+        Pellentesque ullamcorper massa non est sodales cursus. Donec tempus iaculis diam, eget facilisis tellus volutpat vitae.
+        Etiam vehicula aliquam nulla, et fringilla augue eleifend ut.
+        Duis at odio tortor. Integer et elementum lectus, quis auctor magna.
+        Aliquam lectus ipsum, sodales vitae euismod vel, tempor eget enim. Fusce a elit hendrerit, auctor nisi vitae, pulvinar dui.
+        Morbi quis feugiat eros, et tincidunt tortor. Quisque dolor ante, porta quis urna a, volutpat molestie lorem.
+        Integer egestas egestas tincidunt. Ut volutpat tortor id sapien fringilla, non pharetra neque cursus.
+        Maecenas cursus elit et felis facilisis, sit amet egestas turpis cursus. Nunc vitae dolor nibh.</string>
+</resources>
